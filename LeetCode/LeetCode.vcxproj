@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Challenges\1. Two sum\Solution.cpp" />
+    <ClCompile Include="Challenges\12. Integer to Roman\Solution.cpp" />
+    <ClCompile Include="Challenges\13. Roman to Integer\Solution.cpp" />
     <ClCompile Include="Challenges\2. Add two numbers\Solution.cpp" />
     <ClCompile Include="Challenges\3. Longest Substring Without Repeating Characters\Solution.cpp" />
     <ClCompile Include="Challenges\4. Median of Two Sorted Arrays\Solution.cpp" />
@@ -148,6 +150,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Challenges\1. Two sum\Solution.h" />
+    <ClInclude Include="Challenges\12. Integer to Roman\Solution.h" />
+    <ClInclude Include="Challenges\13. Roman to Integer\Solution.h" />
     <ClInclude Include="Challenges\2. Add two numbers\Solution.h" />
     <ClInclude Include="Challenges\3. Longest Substring Without Repeating Characters\Solution.h" />
     <ClInclude Include="Challenges\4. Median of Two Sorted Arrays\Solution.h" />

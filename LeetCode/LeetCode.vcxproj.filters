@@ -33,6 +33,12 @@
     <ClCompile Include="Challenges\5. Longest Palindromic Substring\Solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Challenges\12. Integer to Roman\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\13. Roman to Integer\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Challenges\1. Two sum\Solution.h">
@@ -48,6 +54,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Challenges\5. Longest Palindromic Substring\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\12. Integer to Roman\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\13. Roman to Integer\Solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
