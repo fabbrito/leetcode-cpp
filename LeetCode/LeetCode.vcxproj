@@ -142,6 +142,10 @@
     <ClCompile Include="Challenges\1. Two sum\Solution.cpp" />
     <ClCompile Include="Challenges\12. Integer to Roman\Solution.cpp" />
     <ClCompile Include="Challenges\13. Roman to Integer\Solution.cpp" />
+    <ClCompile Include="Challenges\14. Longest Common Prefix\Solution.cpp" />
+    <ClCompile Include="Challenges\15. 3Sum\Solution.cpp" />
+    <ClCompile Include="Challenges\16. 3Sum Closest\Solution.cpp" />
+    <ClCompile Include="Challenges\17. Letter Combinations of a Phone Number\Solution.cpp" />
     <ClCompile Include="Challenges\2. Add two numbers\Solution.cpp" />
     <ClCompile Include="Challenges\3. Longest Substring Without Repeating Characters\Solution.cpp" />
     <ClCompile Include="Challenges\4. Median of Two Sorted Arrays\Solution.cpp" />
@@ -152,6 +156,10 @@
     <ClInclude Include="Challenges\1. Two sum\Solution.h" />
     <ClInclude Include="Challenges\12. Integer to Roman\Solution.h" />
     <ClInclude Include="Challenges\13. Roman to Integer\Solution.h" />
+    <ClInclude Include="Challenges\14. Longest Common Prefix\Solution.h" />
+    <ClInclude Include="Challenges\15. 3Sum\Solution.h" />
+    <ClInclude Include="Challenges\16. 3Sum Closest\Solution.h" />
+    <ClInclude Include="Challenges\17. Letter Combinations of a Phone Number\Solution.h" />
     <ClInclude Include="Challenges\2. Add two numbers\Solution.h" />
     <ClInclude Include="Challenges\3. Longest Substring Without Repeating Characters\Solution.h" />
     <ClInclude Include="Challenges\4. Median of Two Sorted Arrays\Solution.h" />

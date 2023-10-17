@@ -106,7 +106,7 @@ int test_13()
 
 	std::cout << "Testing Solution" << std::endl;
 	for (auto& test : tests) {
-		result = solution->romanToIntSwitch(test.s);
+		result = solution->romanToInt(test.s);
 		std::cout << test.s << " -> " << result << std::endl;
 		if (result != test.expected) return 1;
 	}
