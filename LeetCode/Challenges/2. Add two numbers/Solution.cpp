@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include "Solution.h"
-#include "Solution.h"
 
 /**
  * Definition for singly-linked list.

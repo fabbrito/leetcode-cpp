@@ -132,11 +132,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\myQuickSort.cpp" />
+    <ClCompile Include="src\printMatrix.cpp" />
     <ClCompile Include="src\printVector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\myQuickSort.h" />
+    <ClInclude Include="src\printMatrix.h" />
     <ClInclude Include="src\printVector.h" />
+    <ClInclude Include="src\utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

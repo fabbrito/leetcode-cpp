@@ -1,5 +1,5 @@
-#ifndef PRINT_INT_VECTOR_H_INCLUDED
-#define PRINT_INT_VECTOR_H_INCLUDED
+#ifndef PRINT_VECTOR_H_INCLUDED
+#define PRINT_VECTOR_H_INCLUDED
 
 namespace utils {
 	template <typename T>

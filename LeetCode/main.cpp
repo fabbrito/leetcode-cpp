@@ -1,10 +1,9 @@
 #include <iostream>
 #include <vector>
-
-#include "Challenges/17. Letter Combinations of a Phone Number/Solution.h"
+#include "Challenges/21. Merge Two Sorted Lists/Solution.h"
 
 
 int main(int argc, char** argv)
 {
-	return test_17();
+	return test_21();
 }

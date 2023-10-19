@@ -146,7 +146,11 @@
     <ClCompile Include="Challenges\15. 3Sum\Solution.cpp" />
     <ClCompile Include="Challenges\16. 3Sum Closest\Solution.cpp" />
     <ClCompile Include="Challenges\17. Letter Combinations of a Phone Number\Solution.cpp" />
+    <ClCompile Include="Challenges\18. 4Sum\Solution.cpp" />
+    <ClCompile Include="Challenges\19. Remove Nth Node From End of List\Solution.cpp" />
     <ClCompile Include="Challenges\2. Add two numbers\Solution.cpp" />
+    <ClCompile Include="Challenges\20. Valid Parentheses\Solution.cpp" />
+    <ClCompile Include="Challenges\21. Merge Two Sorted Lists\Solution.cpp" />
     <ClCompile Include="Challenges\3. Longest Substring Without Repeating Characters\Solution.cpp" />
     <ClCompile Include="Challenges\4. Median of Two Sorted Arrays\Solution.cpp" />
     <ClCompile Include="Challenges\5. Longest Palindromic Substring\Solution.cpp" />
@@ -160,7 +164,11 @@
     <ClInclude Include="Challenges\15. 3Sum\Solution.h" />
     <ClInclude Include="Challenges\16. 3Sum Closest\Solution.h" />
     <ClInclude Include="Challenges\17. Letter Combinations of a Phone Number\Solution.h" />
+    <ClInclude Include="Challenges\18. 4Sum\Solution.h" />
+    <ClInclude Include="Challenges\19. Remove Nth Node From End of List\Solution.h" />
     <ClInclude Include="Challenges\2. Add two numbers\Solution.h" />
+    <ClInclude Include="Challenges\20. Valid Parentheses\Solution.h" />
+    <ClInclude Include="Challenges\21. Merge Two Sorted Lists\Solution.h" />
     <ClInclude Include="Challenges\3. Longest Substring Without Repeating Characters\Solution.h" />
     <ClInclude Include="Challenges\4. Median of Two Sorted Arrays\Solution.h" />
     <ClInclude Include="Challenges\5. Longest Palindromic Substring\Solution.h" />
