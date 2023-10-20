@@ -14,9 +14,15 @@
  */
 
 namespace leetcode_21 {
-	ListNode* Solution::mergeTwoLists(ListNode* list1, ListNode* list2) {
-		if (list1 == nullptr) return list2;
-		if (list2 == nullptr) return list1;
+	ListNode* Solution::mergeTwoLists(ListNode* a, ListNode* b) {
+		if (!a || b && a->val > b->val) std::swap(a, b);
+		if (a) a->next = mergeTwoLists(a->next, b);
+		return a;
+	}
+
+	ListNode* Solution::mergeTwoListsIterative(ListNode* list1, ListNode* list2) {
+		if (!list1) return list2;
+		if (!list2) return list1;
 
 		ListNode* head_s = nullptr;
 		ListNode* head_g = nullptr;

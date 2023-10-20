@@ -63,6 +63,21 @@
     <ClCompile Include="Challenges\21. Merge Two Sorted Lists\Solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Challenges\22. Generate Parentheses\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\23. Merge k Sorted Lists\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\24. Swap Nodes in Pairs\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\25. Reverse Nodes in k-Group\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\26. Remove Duplicates from Sorted Array\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Challenges\1. Two sum\Solution.h">
@@ -108,6 +123,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Challenges\21. Merge Two Sorted Lists\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\22. Generate Parentheses\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\23. Merge k Sorted Lists\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\24. Swap Nodes in Pairs\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\25. Reverse Nodes in k-Group\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\26. Remove Duplicates from Sorted Array\Solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

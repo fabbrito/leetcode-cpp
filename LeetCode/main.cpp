@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
-#include "Challenges/21. Merge Two Sorted Lists/Solution.h"
+#include "Challenges/26. Remove Duplicates from Sorted Array/Solution.h"
 
 
 int main(int argc, char** argv)
 {
-	return test_21();
+	return test_26();
 }
