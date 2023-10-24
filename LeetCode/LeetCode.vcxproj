@@ -156,7 +156,13 @@
     <ClCompile Include="Challenges\24. Swap Nodes in Pairs\Solution.cpp" />
     <ClCompile Include="Challenges\25. Reverse Nodes in k-Group\Solution.cpp" />
     <ClCompile Include="Challenges\26. Remove Duplicates from Sorted Array\Solution.cpp" />
+    <ClCompile Include="Challenges\27. Remove Element\Solution.cpp" />
+    <ClCompile Include="Challenges\28. Find the Index of the First Occurrence in a String\Solution.cpp" />
+    <ClCompile Include="Challenges\29. Divide Two Integers\Solution.cpp" />
     <ClCompile Include="Challenges\3. Longest Substring Without Repeating Characters\Solution.cpp" />
+    <ClCompile Include="Challenges\30. Substring with Concatenation of All Words\Solution.cpp" />
+    <ClCompile Include="Challenges\31. Next Permutation\Solution.cpp" />
+    <ClCompile Include="Challenges\32. Longest Valid Parentheses\Solution.cpp" />
     <ClCompile Include="Challenges\4. Median of Two Sorted Arrays\Solution.cpp" />
     <ClCompile Include="Challenges\5. Longest Palindromic Substring\Solution.cpp" />
     <ClCompile Include="main.cpp" />
@@ -179,7 +185,13 @@
     <ClInclude Include="Challenges\24. Swap Nodes in Pairs\Solution.h" />
     <ClInclude Include="Challenges\25. Reverse Nodes in k-Group\Solution.h" />
     <ClInclude Include="Challenges\26. Remove Duplicates from Sorted Array\Solution.h" />
+    <ClInclude Include="Challenges\27. Remove Element\Solution.h" />
+    <ClInclude Include="Challenges\28. Find the Index of the First Occurrence in a String\Solution.h" />
+    <ClInclude Include="Challenges\29. Divide Two Integers\Solution.h" />
     <ClInclude Include="Challenges\3. Longest Substring Without Repeating Characters\Solution.h" />
+    <ClInclude Include="Challenges\30. Substring with Concatenation of All Words\Solution.h" />
+    <ClInclude Include="Challenges\31. Next Permutation\Solution.h" />
+    <ClInclude Include="Challenges\32. Longest Valid Parentheses\Solution.h" />
     <ClInclude Include="Challenges\4. Median of Two Sorted Arrays\Solution.h" />
     <ClInclude Include="Challenges\5. Longest Palindromic Substring\Solution.h" />
   </ItemGroup>

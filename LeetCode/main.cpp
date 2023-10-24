@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
-#include "Challenges/26. Remove Duplicates from Sorted Array/Solution.h"
+#include "Challenges/32. Longest Valid Parentheses/Solution.h"
 
 
 int main(int argc, char** argv)
 {
-	return test_26();
+	return test_32();
 }
