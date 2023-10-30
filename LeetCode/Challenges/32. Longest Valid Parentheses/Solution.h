@@ -8,9 +8,7 @@ namespace leetcode_32 {
         bool isValid(std::string& s, int pStart, int pStop);
         int longestValidParenthesesSlow(std::string s);
 
-        //int longestValidParentheses(std::string s);
-        //int partition(std::string& s, int pStart, int pEnd);
-        //int longestValidParenthesesRecursive(std::string& s, int p);
+        int longestValidParentheses(std::string s);
     };
 }
 

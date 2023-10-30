@@ -96,6 +96,30 @@
     <ClCompile Include="Challenges\32. Longest Valid Parentheses\Solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Challenges\496. Next Greater Element I\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\33. Search in Rotated Sorted Array\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\6. Zigzag Conversion\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\7. Reverse Integer\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\8. String to Integer (atoi)\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\9. Palindrome Number\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\10. Regular Expression Matching\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\11. Container With Most Water\Solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Challenges\1. Two sum\Solution.h">
@@ -174,6 +198,30 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Challenges\32. Longest Valid Parentheses\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\496. Next Greater Element I\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\33. Search in Rotated Sorted Array\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\6. Zigzag Conversion\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\7. Reverse Integer\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\8. String to Integer (atoi)\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\9. Palindrome Number\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\10. Regular Expression Matching\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\11. Container With Most Water\Solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

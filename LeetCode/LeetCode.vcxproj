@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Challenges\1. Two sum\Solution.cpp" />
+    <ClCompile Include="Challenges\10. Regular Expression Matching\Solution.cpp" />
+    <ClCompile Include="Challenges\11. Container With Most Water\Solution.cpp" />
     <ClCompile Include="Challenges\12. Integer to Roman\Solution.cpp" />
     <ClCompile Include="Challenges\13. Roman to Integer\Solution.cpp" />
     <ClCompile Include="Challenges\14. Longest Common Prefix\Solution.cpp" />
@@ -163,12 +165,20 @@
     <ClCompile Include="Challenges\30. Substring with Concatenation of All Words\Solution.cpp" />
     <ClCompile Include="Challenges\31. Next Permutation\Solution.cpp" />
     <ClCompile Include="Challenges\32. Longest Valid Parentheses\Solution.cpp" />
+    <ClCompile Include="Challenges\33. Search in Rotated Sorted Array\Solution.cpp" />
     <ClCompile Include="Challenges\4. Median of Two Sorted Arrays\Solution.cpp" />
+    <ClCompile Include="Challenges\496. Next Greater Element I\Solution.cpp" />
     <ClCompile Include="Challenges\5. Longest Palindromic Substring\Solution.cpp" />
+    <ClCompile Include="Challenges\6. Zigzag Conversion\Solution.cpp" />
+    <ClCompile Include="Challenges\7. Reverse Integer\Solution.cpp" />
+    <ClCompile Include="Challenges\8. String to Integer (atoi)\Solution.cpp" />
+    <ClCompile Include="Challenges\9. Palindrome Number\Solution.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Challenges\1. Two sum\Solution.h" />
+    <ClInclude Include="Challenges\10. Regular Expression Matching\Solution.h" />
+    <ClInclude Include="Challenges\11. Container With Most Water\Solution.h" />
     <ClInclude Include="Challenges\12. Integer to Roman\Solution.h" />
     <ClInclude Include="Challenges\13. Roman to Integer\Solution.h" />
     <ClInclude Include="Challenges\14. Longest Common Prefix\Solution.h" />
@@ -192,8 +202,14 @@
     <ClInclude Include="Challenges\30. Substring with Concatenation of All Words\Solution.h" />
     <ClInclude Include="Challenges\31. Next Permutation\Solution.h" />
     <ClInclude Include="Challenges\32. Longest Valid Parentheses\Solution.h" />
+    <ClInclude Include="Challenges\33. Search in Rotated Sorted Array\Solution.h" />
     <ClInclude Include="Challenges\4. Median of Two Sorted Arrays\Solution.h" />
+    <ClInclude Include="Challenges\496. Next Greater Element I\Solution.h" />
     <ClInclude Include="Challenges\5. Longest Palindromic Substring\Solution.h" />
+    <ClInclude Include="Challenges\6. Zigzag Conversion\Solution.h" />
+    <ClInclude Include="Challenges\7. Reverse Integer\Solution.h" />
+    <ClInclude Include="Challenges\8. String to Integer (atoi)\Solution.h" />
+    <ClInclude Include="Challenges\9. Palindrome Number\Solution.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Utils\Utils.vcxproj">

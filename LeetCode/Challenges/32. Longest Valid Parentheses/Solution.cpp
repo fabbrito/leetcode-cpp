@@ -2,10 +2,14 @@
 #include <vector>
 #include <string>
 #include <stack>
-#include <queue>
-#include <unordered_map>
 #include "Solution.h"
 #include "utils.h"
+
+//Next Greater Element
+//Next Smaller Element
+//Previous Greater Element
+//Previous Smaller Element
+//Largest Rectangle in Histogram
 
 bool leetcode_32::Solution::isValid(std::string& s, int pStart, int pStop) {
 	std::stack<char> st;
@@ -23,38 +27,29 @@ bool leetcode_32::Solution::isValid(std::string& s, int pStart, int pStop) {
 	return st.empty();
 }
 
-//int leetcode_32::Solution::partition(std::string& s, int pStart, int pEnd) {
-//	int p = pEnd - 1;
-//	while (p > pStart && (s[p] != '(' || s[p + 1] != ')'))
-//		p--;
-//	return p;
-//}
-//
-//int leetcode_32::Solution::longestValidParenthesesRecursive(std::string& s, int p) {
-//	int n = s.length();
-//	int i = p, j = p;
-//	int choice = -1; // possible values: -1, 0, 1
-//	while (i >= 0 && j < n && i < j) {
-//
-//		bool flag = isValid(s, i, j);
-//	}
-//	return 0;
-//}
-//
-//int leetcode_32::Solution::longestValidParentheses(std::string s) {
-//	int n = s.length();
-//	int start = 0, end = 7;
-//
-//	int p = partition(s, start, end);
-//	int pL = partition(s, start, p);
-//	bool flag = false;
-//	int dist = p - pL - 2;
-//	if (pL - dist >= 0)
-//		flag = isValid(s, pL - dist, p + 1);
-//	std::cout << pL << " " << p << " " << flag << "\r\n";
-//
-//	return 0;
-//}
+int leetcode_32::Solution::longestValidParentheses(std::string s) {
+	std::stack<int> st;
+	st.push(-1);
+	int ans = 0;
+
+	for (int i = 0; i < s.size(); i++) {
+		if (s[i] == '(') {
+			st.push(i);
+		}
+		else {
+			if (st.size() == 1) {
+				st.pop();
+				st.push(i);
+			}
+			else {
+				st.pop();
+				ans = std::max(ans, i - st.top());
+			}
+		}
+
+	}
+	return ans;
+}
 
 int leetcode_32::Solution::longestValidParenthesesSlow(std::string s) {
 	int n = s.length();
@@ -94,22 +89,23 @@ int test_32() {
 		int expected;
 	};
 	std::vector<Test> tests = {
-		{"(())()(()((", 6},
-		{")))()()(((", 4},
-		{"((()))", 6},
-		{")()())", 4},
-		{"()(()()(", 4},
+		{"", 0},
 		{"(()", 2},
-		{"((())())", 8},
 		{")))))()(((((", 2},
 		{"(((((()", 2},
-		{"", 0},
+		{")))()()(((", 4},
+		{")()())", 4},
+		{"()(()()(", 4},
+		{"(())()(()((", 6},
+		{"((()))", 6},
+		{"((())())", 8},
+		{"((())())((())())((())())((())())((())())((())())", 48},
 	};
 
 	std::cout << "Testing Solution" << std::endl;
 	for (auto& test : tests) {
 		std::cout << test.s << " -> ";
-		result = solution->longestValidParenthesesSlow(test.s);
+		result = solution->longestValidParentheses(test.s);
 		std::cout << result << "\r\n";
 
 		if (result != test.expected) return 1;

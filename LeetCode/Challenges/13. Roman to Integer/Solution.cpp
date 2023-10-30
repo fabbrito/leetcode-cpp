@@ -4,73 +4,72 @@
 #include <unordered_map>
 #include "Solution.h"
 
-namespace leetcode_13 {
-	int Solution::romanTovalue(char c) {
-		int r = 0;
-		switch (c) {
-		case 'I':
-			r = 1;
-			break;
-		case 'V':
-			r = 5;
-			break;
-		case 'X':
-			r = 10;
-			break;
-		case 'L':
-			r = 50;
-			break;
-		case 'C':
-			r = 100;
-			break;
-		case 'D':
-			r = 500;
-			break;
-		case 'M':
-			r = 1000;
-			break;
-		default:
-			break;
-		}
-		return r;
+int leetcode_13::Solution::romanTovalue(char c) {
+	int r = 0;
+	switch (c) {
+	case 'I':
+		r = 1;
+		break;
+	case 'V':
+		r = 5;
+		break;
+	case 'X':
+		r = 10;
+		break;
+	case 'L':
+		r = 50;
+		break;
+	case 'C':
+		r = 100;
+		break;
+	case 'D':
+		r = 500;
+		break;
+	case 'M':
+		r = 1000;
+		break;
+	default:
+		break;
 	}
-
-	int Solution::romanToIntSwitch(std::string s) {
-		int res = 0;
-		for (int i = 0; i < s.length(); i++) {
-			if (romanTovalue(s[i]) < romanTovalue(s[i+1])) {
-				res -= romanTovalue(s[i]);
-			}
-			else {
-				res += romanTovalue(s[i]);
-			}
-		}
-		return res;
-	}
-
-	int Solution::romanToInt(std::string s)
-	{
-		std::unordered_map<char, int> romanMap = {
-			{'I', 1},
-			{'V', 5},
-			{'X', 10},
-			{'L', 50},
-			{'C', 100},
-			{'D', 500},
-			{'M', 1000}
-		};
-		int res = 0; 
-		for (int i = 0; i < s.length(); i++) {
-			if (romanMap[s[i]] < romanMap[s[i+1]]) {
-				res -= romanMap[s[i]];
-			}
-			else {
-				res += romanMap[s[i]];
-			}
-		}
-		return res;
-	}
+	return r;
 }
+
+int leetcode_13::Solution::romanToIntSwitch(std::string s) {
+	int res = 0;
+	for (int i = 0; i < s.length(); i++) {
+		if (romanTovalue(s[i]) < romanTovalue(s[i + 1])) {
+			res -= romanTovalue(s[i]);
+		}
+		else {
+			res += romanTovalue(s[i]);
+		}
+	}
+	return res;
+}
+
+int leetcode_13::Solution::romanToInt(std::string s)
+{
+	std::unordered_map<char, int> romanMap = {
+		{'I', 1},
+		{'V', 5},
+		{'X', 10},
+		{'L', 50},
+		{'C', 100},
+		{'D', 500},
+		{'M', 1000}
+	};
+	int res = 0;
+	for (int i = 0; i < s.length(); i++) {
+		if (romanMap[s[i]] < romanMap[s[i + 1]]) {
+			res -= romanMap[s[i]];
+		}
+		else {
+			res += romanMap[s[i]];
+		}
+	}
+	return res;
+}
+
 
 int test_13()
 {
@@ -82,7 +81,7 @@ int test_13()
 		int expected;
 	};
 	std::vector<Test> tests = {
-		{"D", 500},
+		{"DI", 501},
 		{"MCMXCIV", 1994},
 		{"LVIII", 58},
 		{"XXI",21},
