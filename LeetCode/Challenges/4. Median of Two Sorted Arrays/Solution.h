@@ -7,7 +7,7 @@ namespace leetcode_4 {
 	class Solution {
 	public:
 		double findMedianSortedArraysSimple(std::vector<int>& nums1, std::vector<int>& nums2);
-		double findMedianSortedArraysPointers(std::vector<int>& nums1, std::vector<int>& nums2);
+		double findMedianSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2);
 	};
 }
 

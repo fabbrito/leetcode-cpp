@@ -5,8 +5,7 @@
 namespace leetcode_3 {
 	class Solution {
 	public:
-		int lengthOfLongestSubstringSimple(std::string s);
-		int lengthOfLongestSubstringUnorderedSet(std::string s);
+		int lengthOfLongestSubstring(std::string s);
 		int lengthOfLongestSubstringUnorderedMap(std::string s);
 		int lengthOfLongestSubstringIntArray(std::string s);
 	};

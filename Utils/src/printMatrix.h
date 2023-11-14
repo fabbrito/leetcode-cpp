@@ -3,7 +3,7 @@
 
 namespace utils {
 	template <typename T>
-	void printMatrix(const std::vector<std::vector<T>>& vec, std::string separator = ", ", bool endlFlag = true);
+	void printMatrix(const std::vector<std::vector<T>>& vec, bool flat = false, std::string separator = ", ");
 }
 
 #endif

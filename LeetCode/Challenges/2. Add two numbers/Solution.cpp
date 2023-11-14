@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "Solution.h"
+#include "./Solution.h"
 
 /**
  * Definition for singly-linked list.
@@ -12,74 +12,74 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-namespace leetcode_2 {
-	ListNode* Solution::addTwoNumbers(ListNode* l1, ListNode* l2)
-	{
-		ListNode* head = nullptr;
-		ListNode* current = nullptr;
 
-		int carry = 0, sum = 0, val = 0, val_1 = 0, val_2 = 0;
-		while ((carry != 0) || (l1 != nullptr) || (l2 != nullptr)) {
-			if (l1 != nullptr) {
-				val_1 = l1->val;
-				l1 = l1->next;
-			}
-			else {
-				val_1 = 0;
-			}
-			if (l2 != nullptr) {
-				val_2 = l2->val;
-				l2 = l2->next;
-			}
-			else {
-				val_2 = 0;
-			}
-			sum = val_1 + val_2 + carry;
-			val = sum % 10;
-			carry = (int)(sum / 10);
+ListNode* leetcode_2::Solution::addTwoNumbers(ListNode* l1, ListNode* l2) {
+	ListNode* head = nullptr;
+	ListNode* current = nullptr;
 
-			ListNode* newNode = new ListNode(val);
-			if (head == nullptr) {
-				head = newNode;
-				current = newNode;
-			}
-			else {
-				current->next = newNode;
-				current = newNode;
-			}
+	int carry = 0, sum = 0, val = 0, val_1 = 0, val_2 = 0;
+	while ((carry != 0) || (l1 != nullptr) || (l2 != nullptr)) {
+		if (l1 != nullptr) {
+			val_1 = l1->val;
+			l1 = l1->next;
 		}
+		else {
+			val_1 = 0;
+		}
+		if (l2 != nullptr) {
+			val_2 = l2->val;
+			l2 = l2->next;
+		}
+		else {
+			val_2 = 0;
+		}
+		sum = val_1 + val_2 + carry;
+		val = sum % 10;
+		carry = (int)(sum / 10);
 
-		return head;
+		ListNode* newNode = new ListNode(val);
+		if (head == nullptr) {
+			head = newNode;
+			current = newNode;
+		}
+		else {
+			current->next = newNode;
+			current = newNode;
+		}
 	}
 
-	ListNode* to_linked_list(std::vector<int>& vec) {
-		ListNode* head = nullptr;
-		ListNode* current = nullptr;
-		for (auto& val : vec) {
-			ListNode* newNode = new ListNode(val);
-			if (head == nullptr) {
-				head = newNode;
-				current = newNode;
-			}
-			else {
-				current->next = newNode;
-				current = newNode;
-			}
-		}
-		return head;
-	}
+	return head;
+}
 
-	void print_linked_list(ListNode* l) {
-		ListNode* current = l;
-		while (current != nullptr) {
-			if (current->next != nullptr)
-				std::cout << current->val << " -> ";
-			else
-				std::cout << current->val << std::endl;
-			current = current->next;
+ListNode* to_linked_list(std::vector<int>& vec) {
+	ListNode* head = nullptr;
+	ListNode* current = nullptr;
+	for (auto& val : vec) {
+		ListNode* newNode = new ListNode(val);
+		if (head == nullptr) {
+			head = newNode;
+			current = newNode;
 		}
+		else {
+			current->next = newNode;
+			current = newNode;
+		}
+	}
+	return head;
+}
+
+void print_linked_list(ListNode* l) {
+	ListNode* current = l;
+	while (current != nullptr) {
+		if (current->next != nullptr)
+			std::cout << current->val << " -> ";
+		else
+			std::cout << current->val << std::endl;
+		current = current->next;
 	}
 }
+
+
 
 int test_2() {
 	using namespace leetcode_2;

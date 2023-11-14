@@ -1,9 +1,6 @@
-#include <iostream>
-#include <vector>
-#include "Challenges/13. Roman to Integer/Solution.h"
-
+#include "Challenges/39. Combination Sum/Solution39.h"
 
 int main(int argc, char** argv)
 {
-	return test_13();
+	return test_39();
 }

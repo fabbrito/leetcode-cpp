@@ -117,7 +117,28 @@
     <ClCompile Include="Challenges\10. Regular Expression Matching\Solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Challenges\11. Container With Most Water\Solution.cpp">
+    <ClCompile Include="Challenges\11. Container With Most Water\Solution11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\501. Find Mode in Binary Search Tree\Solution501.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\34. Find First and Last Position of Element in Sorted Array\Solution34.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\35. Search Insert Position\Solution35.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\36. Valid Sudoku\Solution36.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\37. Sudoku Solver\Solution37.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\38. Count and Say\Solution38.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\39. Combination Sum\Solution39.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -221,7 +242,28 @@
     <ClInclude Include="Challenges\10. Regular Expression Matching\Solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Challenges\11. Container With Most Water\Solution.h">
+    <ClInclude Include="Challenges\11. Container With Most Water\Solution11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\501. Find Mode in Binary Search Tree\Solution501.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\34. Find First and Last Position of Element in Sorted Array\Solution34.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\35. Search Insert Position\Solution35.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\36. Valid Sudoku\Solution36.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\37. Sudoku Solver\Solution37.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\38. Count and Say\Solution38.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\39. Combination Sum\Solution39.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
