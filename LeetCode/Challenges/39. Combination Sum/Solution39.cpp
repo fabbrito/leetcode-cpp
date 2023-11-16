@@ -1,19 +1,22 @@
 #include "Solution39.h"
 #include "utils.h"
+namespace leetcode_39 {
+	using namespace std;
+	class Solution;
+}
 
-class Solution {
+
+class leetcode_39::Solution {
 public:
-	using IntMat = std::vector<std::vector<int>>;
-	using IntVec = std::vector<int>;
-	IntMat combinationSum(IntVec& nums, int target) noexcept {
-		IntMat result = {};
-		IntVec vec = {};
-		std::sort(nums.begin(), nums.end());
+	vector<vector<int>> combinationSum(vector<int>& nums, int target) noexcept {
+		vector<vector<int>> result = {};
+		vector<int> vec = {};
+		sort(nums.begin(), nums.end());
 		solve(nums, target, 0, result, vec);
 		return result;
 	}
 private:
-	static void solve(IntVec& nums, int target, int next, IntMat& result, IntVec& vec) noexcept {
+	static void solve(vector<int>& nums, int target, int next, vector<vector<int>>& result, vector<int>& vec) noexcept {
 		if (target == 0) {
 			result.push_back(vec);
 			return;
@@ -30,28 +33,30 @@ private:
 	}
 };
 
+
 int test_39()
 {
+	using namespace leetcode_39;
 	Solution* solution = new Solution;
-	std::vector<std::vector<int>> result;
+	vector<vector<int>> result;
 	struct Test {
-		std::vector<int> nums;
+		vector<int> nums;
 		int target;
-		std::vector<std::vector<int>> expected;
+		vector<vector<int>> expected;
 	};
-	std::vector<Test> tests = {
+	vector<Test> tests = {
 		{{2,3,5},8,{{2,2,2,2},{2,3,3},{3,5}}},
 		{{2,3,6,7},7,{{2,2,3},{7}}},
 		{{2},1,{}},
 	};
 
-	std::cout << "Testing Solution" << std::endl;
+	cout << "Testing Solution" << endl;
 	for (auto& test : tests) {
 		utils::printVector(test.nums, ", ", false);
-		std::cout << ", " << test.target << " -> ";
+		cout << ", " << test.target << " -> ";
 		result = solution->combinationSum(test.nums, test.target);
 		utils::printMatrix(result, true);
-		std::cout << std::endl;
+		cout << endl;
 		if (result != test.expected) return 1;
 	}
 	return 0;

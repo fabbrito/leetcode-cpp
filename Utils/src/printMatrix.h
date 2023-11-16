@@ -1,9 +1,10 @@
-#ifndef PRINT_MATRIX_H_INCLUDED
-#define PRINT_MATRIX_H_INCLUDED
+#pragma once
+
+#include <iostream>
+#include <vector>
+#include <string>
 
 namespace utils {
 	template <typename T>
 	void printMatrix(const std::vector<std::vector<T>>& vec, bool flat = false, std::string separator = ", ");
 }
-
-#endif

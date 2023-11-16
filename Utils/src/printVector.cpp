@@ -1,13 +1,10 @@
-#include <iostream>
-#include <vector>
-#include <string>
 #include "printVector.h"
 
 namespace utils {
 	template <typename T>
 	void printVector(const std::vector<T>& vec, std::string separator, bool endlFlag) {
 		std::cout << "{ ";
-		for (int i = 0; i < vec.size(); i++) {
+		for (std::size_t i = 0; i < vec.size(); i++) {
 			if (i < vec.size() - 1) std::cout << vec[i] << separator;
 			else std::cout << vec[i];
 		}

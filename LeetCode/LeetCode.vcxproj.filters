@@ -141,6 +141,15 @@
     <ClCompile Include="Challenges\39. Combination Sum\Solution39.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Challenges\40. Combination Sum II\Solution40.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\41. First Missing Positive\Solution41.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\42. Trapping Rain Water\Solution42.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Challenges\1. Two sum\Solution.h">
@@ -264,6 +273,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Challenges\39. Combination Sum\Solution39.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\40. Combination Sum II\Solution40.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\41. First Missing Positive\Solution41.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\42. Trapping Rain Water\Solution42.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

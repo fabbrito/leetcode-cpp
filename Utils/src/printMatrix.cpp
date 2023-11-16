@@ -1,8 +1,5 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include "printMatrix.h"
 #include "printVector.h"
+#include "printMatrix.h"
 
 namespace utils {
 	template <typename T>
