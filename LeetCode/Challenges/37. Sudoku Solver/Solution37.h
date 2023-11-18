@@ -1,7 +1,4 @@
-#ifndef SUDOKU_SOLVER_H_INLCUDED
-#define SUDOKU_SOLVER_H_INLCUDED
-
+#pragma once
 //37. Sudoku Solver
 int test_37();
 
-#endif

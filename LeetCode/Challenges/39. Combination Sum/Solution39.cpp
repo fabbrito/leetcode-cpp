@@ -1,5 +1,6 @@
+#include "pch.h"
 #include "Solution39.h"
-#include "utils.h"
+
 namespace leetcode_39 {
 	using namespace std;
 	class Solution;
@@ -37,7 +38,7 @@ private:
 int test_39()
 {
 	using namespace leetcode_39;
-	Solution* solution = new Solution;
+	Solution solution;
 	vector<vector<int>> result;
 	struct Test {
 		vector<int> nums;
@@ -54,7 +55,7 @@ int test_39()
 	for (auto& test : tests) {
 		utils::printVector(test.nums, ", ", false);
 		cout << ", " << test.target << " -> ";
-		result = solution->combinationSum(test.nums, test.target);
+		result = solution.combinationSum(test.nums, test.target);
 		utils::printMatrix(result, true);
 		cout << endl;
 		if (result != test.expected) return 1;

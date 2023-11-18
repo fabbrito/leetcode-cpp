@@ -1,8 +1,12 @@
-#include <iostream>
-#include <vector>
-#include <string>
+#include "pch.h"
 #include "./Solution35.h"
-#include "printVector.h"
+
+namespace leetcode_35 {
+	class Solution {
+	public:
+		int searchInsert(std::vector<int>& nums, int target);
+	};
+}
 
 int leetcode_35::Solution::searchInsert(std::vector<int>& nums, int target)
 {
@@ -22,7 +26,7 @@ int leetcode_35::Solution::searchInsert(std::vector<int>& nums, int target)
 int test_35()
 {
 	using namespace leetcode_35;
-	Solution* solution = new Solution;
+	Solution solution;
 	int result;
 	struct Test {
 		std::vector<int> nums;
@@ -42,7 +46,7 @@ int test_35()
 	for (auto& test : tests) {
 		utils::printVector(test.nums, ", ", false);
 		std::cout << ", " << test.target << " -> ";
-		result = solution->searchInsert(test.nums, test.target);
+		result = solution.searchInsert(test.nums, test.target);
 		std::cout << result << std::endl;
 		if (result != test.expected) return 1;
 	}

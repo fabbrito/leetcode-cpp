@@ -1,8 +1,12 @@
-#include <iostream>
-#include <vector>
-#include <string>
+#include "pch.h"
 #include "./Solution11.h"
-#include "printVector.h"
+
+namespace leetcode_11 {
+	class Solution {
+	public:
+		int maxArea(std::vector<int>& height);
+	};
+}
 
 int leetcode_11::Solution::maxArea(std::vector<int>& height)
 {
@@ -25,7 +29,7 @@ int leetcode_11::Solution::maxArea(std::vector<int>& height)
 
 int test_11() {
 	using namespace leetcode_11;
-	Solution* solution = new Solution;
+	Solution solution;
 	int result = 0;
 	struct Test {
 		std::vector<int> height;
@@ -39,7 +43,7 @@ int test_11() {
 
 	std::cout << "Testing Solution" << std::endl;
 	for (auto& test : tests) {
-		result = solution->maxArea(test.height);
+		result = solution.maxArea(test.height);
 		utils::printVector(test.height, ", ", false);
 		std::cout << " -> " << result << std::endl;
 		if (result != test.expected) return 1;

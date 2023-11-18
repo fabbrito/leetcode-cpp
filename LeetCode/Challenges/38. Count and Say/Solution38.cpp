@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <unordered_map>
+#include "pch.h"
 #include "Solution38.h"
 
 class Solution {
@@ -26,7 +23,7 @@ private:
 };
 
 int test_38() {
-	Solution* solution = new Solution;
+	Solution solution;
 	std::string result;
 	struct Test {
 		int n;
@@ -42,7 +39,7 @@ int test_38() {
 
 	std::cout << "Testing Solution" << std::endl;
 	for (auto& test : tests) {
-		result = solution->countAndSay(test.n);
+		result = solution.countAndSay(test.n);
 		std::cout << test.n << " -> " << result << "\r\n";
 		if (result != test.expected) return 1;
 	}

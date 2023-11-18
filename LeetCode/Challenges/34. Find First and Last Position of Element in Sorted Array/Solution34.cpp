@@ -1,8 +1,16 @@
-#include <iostream>
-#include <vector>
-#include <string>
+#include "pch.h"
 #include "./Solution34.h"
-#include "printVector.h"
+
+
+namespace leetcode_34 {
+	class Solution {
+	public:
+		std::vector<int> searchRange(std::vector<int>& nums, int target);
+
+		int lower_bound(std::vector<int>& nums, int target);
+		std::vector<int> searchRange2(std::vector<int>& nums, int target);
+	};
+}
 
 int leetcode_34::Solution::lower_bound(std::vector<int>& nums, int target) {
 	int l = 0, r = nums.size();
@@ -73,7 +81,7 @@ std::vector<int> leetcode_34::Solution::searchRange(std::vector<int>& nums, int 
 int test_34()
 {
 	using namespace leetcode_34;
-	Solution* solution = new Solution;
+	Solution solution;
 	std::vector<int> result;
 	struct Test {
 		std::vector<int> nums;
@@ -96,7 +104,7 @@ int test_34()
 	for (auto& test : tests) {
 		utils::printVector(test.nums, ", ", false);
 		std::cout << ", " << test.target << " -> ";
-		result = solution->searchRange(test.nums, test.target);
+		result = solution.searchRange(test.nums, test.target);
 		utils::printVector(result);
 		if (result != test.expected) return 1;
 	}

@@ -1,6 +1,7 @@
-#include "Challenges/42. Trapping Rain Water/Solution42.h"
+#include "pch.h"
+#include "Challenges/43. Multiply Strings/Solution43.h"
 
 int main(int argc, char** argv)
 {
-	return test_42();
+	return test_43();
 }

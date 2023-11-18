@@ -1,5 +1,5 @@
+#include "pch.h"
 #include "Solution40.h"
-#include "utils.h"
 
 namespace leetcode_40 {
 	using namespace std;
@@ -40,7 +40,7 @@ private:
 int test_40()
 {
 	using namespace leetcode_40;
-	Solution* solution = new Solution;
+	Solution solution;
 	vector<vector<int>> result;
 	struct Test {
 		vector<int> nums;
@@ -57,7 +57,7 @@ int test_40()
 
 	cout << "Testing Solution" << endl;
 	for (auto& test : tests) {
-		result = solution->combinationSum2(test.nums, test.target);
+		result = solution.combinationSum2(test.nums, test.target);
 		utils::printVector(test.nums, ", ", false);
 		cout << ", " << test.target << " -> ";
 		utils::printMatrix(result, true);

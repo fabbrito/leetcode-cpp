@@ -1,21 +1,5 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <array>
-#include <bitset>
-#include "printMatrix.h"
-
-constexpr int get_cell(int row, int col) noexcept {
-	return (row / 3) * 3 + (col / 3);
-}
-
-constexpr int get_next_row(int row, int col) noexcept {
-	return row + (col + 1) / 9;
-}
-
-constexpr int get_next_col(int col) noexcept {
-	return (col + 1) % 9;
-}
+#include "pch.h"
+#include "Solution37.h"
 
 class Solution {
 public:
@@ -42,6 +26,18 @@ public:
 		solve(board, 0, 0, row_contains, col_contains, cell_contains);
 	}
 private:
+	static constexpr int get_cell(int row, int col) noexcept {
+		return (row / 3) * 3 + (col / 3);
+	}
+
+	static constexpr int get_next_row(int row, int col) noexcept {
+		return row + (col + 1) / 9;
+	}
+
+	static constexpr int get_next_col(int col) noexcept {
+		return (col + 1) % 9;
+	}
+
 	static constexpr std::pair<int, int> next_empty_position(Board& board, int row, int col) noexcept {
 		while (row != 9) {
 			if (board[row][col] == '.')
@@ -89,7 +85,7 @@ private:
 
 
 int test_37() {
-	Solution* solution = new Solution;
+	Solution solution;
 	struct Test {
 		std::vector<std::vector<char>> board;
 		std::vector<std::vector<char>> expected;
@@ -142,10 +138,11 @@ int test_37() {
 
 	std::cout << "Testing Solution" << std::endl;
 	for (auto& test : tests) {
+		std::vector<std::vector<char>> board = test.board;
 		utils::printMatrix(test.board);
-		solution->solveSudoku(test.board);
-		utils::printMatrix(test.board);
-		if (test.board != test.expected) return 1;
+		solution.solveSudoku(board);
+		utils::printMatrix(board);
+		if (board != test.expected) return 1;
 	}
 	return 0;
 }

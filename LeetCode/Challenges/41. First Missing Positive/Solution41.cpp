@@ -1,5 +1,5 @@
+#include "pch.h"
 #include "Solution41.h"
-#include "utils.h"
 
 namespace leetcode_41 {
 	using namespace std;
@@ -30,7 +30,7 @@ public:
 int test_41()
 {
 	using namespace leetcode_41;
-	Solution* solution = new Solution;
+	Solution solution;
 	int result;
 	struct Test {
 		vector<int> nums;
@@ -50,7 +50,7 @@ int test_41()
 	cout << "Testing Solution" << endl;
 	for (auto& test : tests) {
 		utils::printVector(test.nums, ", ", false);
-		result = solution->firstMissingPositive(test.nums);
+		result = solution.firstMissingPositive(test.nums);
 		cout << " -> " << result << endl;
 		if (result != test.expected) return 1;
 	}

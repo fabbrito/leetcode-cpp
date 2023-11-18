@@ -57,9 +57,11 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Utils\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Utils\src\;C:\dev\LeetCode\LeetCode\Precompiled Headers\</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -74,9 +76,11 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Utils\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Utils\src\;C:\dev\LeetCode\LeetCode\Precompiled Headers\</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -86,97 +90,107 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Challenges\1. Two sum\Solution.cpp" />
-    <ClCompile Include="Challenges\10. Regular Expression Matching\Solution.cpp" />
+    <ClCompile Include="Challenges\1. Two sum\Solution1.cpp" />
+    <ClCompile Include="Challenges\10. Regular Expression Matching\Solution10.cpp" />
     <ClCompile Include="Challenges\11. Container With Most Water\Solution11.cpp" />
-    <ClCompile Include="Challenges\12. Integer to Roman\Solution.cpp" />
-    <ClCompile Include="Challenges\13. Roman to Integer\Solution.cpp" />
-    <ClCompile Include="Challenges\14. Longest Common Prefix\Solution.cpp" />
-    <ClCompile Include="Challenges\15. 3Sum\Solution.cpp" />
-    <ClCompile Include="Challenges\16. 3Sum Closest\Solution.cpp" />
-    <ClCompile Include="Challenges\17. Letter Combinations of a Phone Number\Solution.cpp" />
-    <ClCompile Include="Challenges\18. 4Sum\Solution.cpp" />
-    <ClCompile Include="Challenges\19. Remove Nth Node From End of List\Solution.cpp" />
-    <ClCompile Include="Challenges\2. Add two numbers\Solution.cpp" />
-    <ClCompile Include="Challenges\20. Valid Parentheses\Solution.cpp" />
-    <ClCompile Include="Challenges\21. Merge Two Sorted Lists\Solution.cpp" />
-    <ClCompile Include="Challenges\22. Generate Parentheses\Solution.cpp" />
-    <ClCompile Include="Challenges\23. Merge k Sorted Lists\Solution.cpp" />
-    <ClCompile Include="Challenges\24. Swap Nodes in Pairs\Solution.cpp" />
-    <ClCompile Include="Challenges\25. Reverse Nodes in k-Group\Solution.cpp" />
-    <ClCompile Include="Challenges\26. Remove Duplicates from Sorted Array\Solution.cpp" />
-    <ClCompile Include="Challenges\27. Remove Element\Solution.cpp" />
-    <ClCompile Include="Challenges\28. Find the Index of the First Occurrence in a String\Solution.cpp" />
-    <ClCompile Include="Challenges\29. Divide Two Integers\Solution.cpp" />
-    <ClCompile Include="Challenges\3. Longest Substring Without Repeating Characters\Solution.cpp" />
-    <ClCompile Include="Challenges\30. Substring with Concatenation of All Words\Solution.cpp" />
-    <ClCompile Include="Challenges\31. Next Permutation\Solution.cpp" />
-    <ClCompile Include="Challenges\32. Longest Valid Parentheses\Solution.cpp" />
-    <ClCompile Include="Challenges\33. Search in Rotated Sorted Array\Solution.cpp" />
+    <ClCompile Include="Challenges\12. Integer to Roman\Solution12.cpp" />
+    <ClCompile Include="Challenges\13. Roman to Integer\Solution13.cpp" />
+    <ClCompile Include="Challenges\14. Longest Common Prefix\Solution14.cpp" />
+    <ClCompile Include="Challenges\15. 3Sum\Solution15.cpp" />
+    <ClCompile Include="Challenges\16. 3Sum Closest\Solution16.cpp" />
+    <ClCompile Include="Challenges\17. Letter Combinations of a Phone Number\Solution17.cpp" />
+    <ClCompile Include="Challenges\18. 4Sum\Solution18.cpp" />
+    <ClCompile Include="Challenges\19. Remove Nth Node From End of List\Solution19.cpp" />
+    <ClCompile Include="Challenges\2. Add two numbers\Solution2.cpp" />
+    <ClCompile Include="Challenges\20. Valid Parentheses\Solution20.cpp" />
+    <ClCompile Include="Challenges\21. Merge Two Sorted Lists\Solution21.cpp" />
+    <ClCompile Include="Challenges\22. Generate Parentheses\Solution22.cpp" />
+    <ClCompile Include="Challenges\23. Merge k Sorted Lists\Solution23.cpp" />
+    <ClCompile Include="Challenges\24. Swap Nodes in Pairs\Solution24.cpp" />
+    <ClCompile Include="Challenges\25. Reverse Nodes in k-Group\Solution25.cpp" />
+    <ClCompile Include="Challenges\26. Remove Duplicates from Sorted Array\Solution26.cpp" />
+    <ClCompile Include="Challenges\27. Remove Element\Solution27.cpp" />
+    <ClCompile Include="Challenges\28. Find the Index of the First Occurrence in a String\Solution28.cpp" />
+    <ClCompile Include="Challenges\29. Divide Two Integers\Solution29.cpp" />
+    <ClCompile Include="Challenges\3. Longest Substring Without Repeating Characters\Solution3.cpp" />
+    <ClCompile Include="Challenges\30. Substring with Concatenation of All Words\Solution30.cpp" />
+    <ClCompile Include="Challenges\31. Next Permutation\Solution31.cpp" />
+    <ClCompile Include="Challenges\32. Longest Valid Parentheses\Solution32.cpp" />
+    <ClCompile Include="Challenges\33. Search in Rotated Sorted Array\Solution33.cpp" />
     <ClCompile Include="Challenges\34. Find First and Last Position of Element in Sorted Array\Solution34.cpp" />
     <ClCompile Include="Challenges\35. Search Insert Position\Solution35.cpp" />
     <ClCompile Include="Challenges\36. Valid Sudoku\Solution36.cpp" />
     <ClCompile Include="Challenges\37. Sudoku Solver\Solution37.cpp" />
     <ClCompile Include="Challenges\38. Count and Say\Solution38.cpp" />
     <ClCompile Include="Challenges\39. Combination Sum\Solution39.cpp" />
-    <ClCompile Include="Challenges\4. Median of Two Sorted Arrays\Solution.cpp" />
+    <ClCompile Include="Challenges\4. Median of Two Sorted Arrays\Solution4.cpp" />
     <ClCompile Include="Challenges\40. Combination Sum II\Solution40.cpp" />
     <ClCompile Include="Challenges\41. First Missing Positive\Solution41.cpp" />
     <ClCompile Include="Challenges\42. Trapping Rain Water\Solution42.cpp" />
-    <ClCompile Include="Challenges\496. Next Greater Element I\Solution.cpp" />
-    <ClCompile Include="Challenges\5. Longest Palindromic Substring\Solution.cpp" />
+    <ClCompile Include="Challenges\43. Multiply Strings\Solution43.cpp" />
+    <ClCompile Include="Challenges\496. Next Greater Element I\Solution496.cpp" />
+    <ClCompile Include="Challenges\5. Longest Palindromic Substring\Solution5.cpp" />
     <ClCompile Include="Challenges\501. Find Mode in Binary Search Tree\Solution501.cpp" />
-    <ClCompile Include="Challenges\6. Zigzag Conversion\Solution.cpp" />
-    <ClCompile Include="Challenges\7. Reverse Integer\Solution.cpp" />
-    <ClCompile Include="Challenges\8. String to Integer (atoi)\Solution.cpp" />
-    <ClCompile Include="Challenges\9. Palindrome Number\Solution.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Challenges\6. Zigzag Conversion\Solution6.cpp" />
+    <ClCompile Include="Challenges\7. Reverse Integer\Solution7.cpp" />
+    <ClCompile Include="Challenges\8. String to Integer %28atoi%29\Solution8.cpp" />
+    <ClCompile Include="Challenges\9. Palindrome Number\Solution9.cpp" />
+    <ClCompile Include="main.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Precompiled Headers\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Challenges\1. Two sum\Solution.h" />
-    <ClInclude Include="Challenges\10. Regular Expression Matching\Solution.h" />
+    <ClInclude Include="Challenges\1. Two sum\Solution1.h" />
+    <ClInclude Include="Challenges\10. Regular Expression Matching\Solution10.h" />
     <ClInclude Include="Challenges\11. Container With Most Water\Solution11.h" />
-    <ClInclude Include="Challenges\12. Integer to Roman\Solution.h" />
-    <ClInclude Include="Challenges\13. Roman to Integer\Solution.h" />
-    <ClInclude Include="Challenges\14. Longest Common Prefix\Solution.h" />
-    <ClInclude Include="Challenges\15. 3Sum\Solution.h" />
-    <ClInclude Include="Challenges\16. 3Sum Closest\Solution.h" />
-    <ClInclude Include="Challenges\17. Letter Combinations of a Phone Number\Solution.h" />
-    <ClInclude Include="Challenges\18. 4Sum\Solution.h" />
-    <ClInclude Include="Challenges\19. Remove Nth Node From End of List\Solution.h" />
-    <ClInclude Include="Challenges\2. Add two numbers\Solution.h" />
-    <ClInclude Include="Challenges\20. Valid Parentheses\Solution.h" />
-    <ClInclude Include="Challenges\21. Merge Two Sorted Lists\Solution.h" />
-    <ClInclude Include="Challenges\22. Generate Parentheses\Solution.h" />
-    <ClInclude Include="Challenges\23. Merge k Sorted Lists\Solution.h" />
-    <ClInclude Include="Challenges\24. Swap Nodes in Pairs\Solution.h" />
-    <ClInclude Include="Challenges\25. Reverse Nodes in k-Group\Solution.h" />
-    <ClInclude Include="Challenges\26. Remove Duplicates from Sorted Array\Solution.h" />
-    <ClInclude Include="Challenges\27. Remove Element\Solution.h" />
-    <ClInclude Include="Challenges\28. Find the Index of the First Occurrence in a String\Solution.h" />
-    <ClInclude Include="Challenges\29. Divide Two Integers\Solution.h" />
-    <ClInclude Include="Challenges\3. Longest Substring Without Repeating Characters\Solution.h" />
-    <ClInclude Include="Challenges\30. Substring with Concatenation of All Words\Solution.h" />
-    <ClInclude Include="Challenges\31. Next Permutation\Solution.h" />
-    <ClInclude Include="Challenges\32. Longest Valid Parentheses\Solution.h" />
-    <ClInclude Include="Challenges\33. Search in Rotated Sorted Array\Solution.h" />
+    <ClInclude Include="Challenges\12. Integer to Roman\Solution12.h" />
+    <ClInclude Include="Challenges\13. Roman to Integer\Solution13.h" />
+    <ClInclude Include="Challenges\14. Longest Common Prefix\Solution14.h" />
+    <ClInclude Include="Challenges\15. 3Sum\Solution15.h" />
+    <ClInclude Include="Challenges\16. 3Sum Closest\Solution16.h" />
+    <ClInclude Include="Challenges\17. Letter Combinations of a Phone Number\Solution17.h" />
+    <ClInclude Include="Challenges\18. 4Sum\Solution18.h" />
+    <ClInclude Include="Challenges\19. Remove Nth Node From End of List\Solution19.h" />
+    <ClInclude Include="Challenges\2. Add two numbers\Solution2.h" />
+    <ClInclude Include="Challenges\20. Valid Parentheses\Solution20.h" />
+    <ClInclude Include="Challenges\21. Merge Two Sorted Lists\Solution21.h" />
+    <ClInclude Include="Challenges\22. Generate Parentheses\Solution22.h" />
+    <ClInclude Include="Challenges\23. Merge k Sorted Lists\Solution23.h" />
+    <ClInclude Include="Challenges\24. Swap Nodes in Pairs\Solution24.h" />
+    <ClInclude Include="Challenges\25. Reverse Nodes in k-Group\Solution25.h" />
+    <ClInclude Include="Challenges\26. Remove Duplicates from Sorted Array\Solution26.h" />
+    <ClInclude Include="Challenges\27. Remove Element\Solution27.h" />
+    <ClInclude Include="Challenges\28. Find the Index of the First Occurrence in a String\Solution28.h" />
+    <ClInclude Include="Challenges\29. Divide Two Integers\Solution29.h" />
+    <ClInclude Include="Challenges\3. Longest Substring Without Repeating Characters\Solution3.h" />
+    <ClInclude Include="Challenges\30. Substring with Concatenation of All Words\Solution30.h" />
+    <ClInclude Include="Challenges\31. Next Permutation\Solution31.h" />
+    <ClInclude Include="Challenges\32. Longest Valid Parentheses\Solution32.h" />
+    <ClInclude Include="Challenges\33. Search in Rotated Sorted Array\Solution33.h" />
     <ClInclude Include="Challenges\34. Find First and Last Position of Element in Sorted Array\Solution34.h" />
     <ClInclude Include="Challenges\35. Search Insert Position\Solution35.h" />
     <ClInclude Include="Challenges\36. Valid Sudoku\Solution36.h" />
     <ClInclude Include="Challenges\37. Sudoku Solver\Solution37.h" />
     <ClInclude Include="Challenges\38. Count and Say\Solution38.h" />
     <ClInclude Include="Challenges\39. Combination Sum\Solution39.h" />
-    <ClInclude Include="Challenges\4. Median of Two Sorted Arrays\Solution.h" />
+    <ClInclude Include="Challenges\4. Median of Two Sorted Arrays\Solution4.h" />
     <ClInclude Include="Challenges\40. Combination Sum II\Solution40.h" />
     <ClInclude Include="Challenges\41. First Missing Positive\Solution41.h" />
     <ClInclude Include="Challenges\42. Trapping Rain Water\Solution42.h" />
-    <ClInclude Include="Challenges\496. Next Greater Element I\Solution.h" />
-    <ClInclude Include="Challenges\5. Longest Palindromic Substring\Solution.h" />
+    <ClInclude Include="Challenges\43. Multiply Strings\Solution43.h" />
+    <ClInclude Include="Challenges\496. Next Greater Element I\Solution496.h" />
+    <ClInclude Include="Challenges\5. Longest Palindromic Substring\Solution5.h" />
     <ClInclude Include="Challenges\501. Find Mode in Binary Search Tree\Solution501.h" />
-    <ClInclude Include="Challenges\6. Zigzag Conversion\Solution.h" />
-    <ClInclude Include="Challenges\7. Reverse Integer\Solution.h" />
-    <ClInclude Include="Challenges\8. String to Integer (atoi)\Solution.h" />
-    <ClInclude Include="Challenges\9. Palindrome Number\Solution.h" />
+    <ClInclude Include="Challenges\6. Zigzag Conversion\Solution6.h" />
+    <ClInclude Include="Challenges\7. Reverse Integer\Solution7.h" />
+    <ClInclude Include="Challenges\8. String to Integer %28atoi%29\Solution8.h" />
+    <ClInclude Include="Challenges\9. Palindrome Number\Solution9.h" />
+    <ClInclude Include="Precompiled Headers\pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Utils\Utils.vcxproj">

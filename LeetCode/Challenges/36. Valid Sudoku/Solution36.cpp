@@ -1,9 +1,12 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <unordered_set>
+#include "pch.h"
 #include "./Solution36.h"
-#include "printMatrix.h"
+
+namespace leetcode_36 {
+	class Solution {
+	public:
+		bool isValidSudoku(std::vector<std::vector<char>>& board);
+	};
+}
 
 bool leetcode_36::Solution::isValidSudoku(std::vector<std::vector<char>>& board)
 {
@@ -59,7 +62,7 @@ bool leetcode_36::Solution::isValidSudoku(std::vector<std::vector<char>>& board)
 int test_36()
 {
 	using namespace leetcode_36;
-	Solution* solution = new Solution;
+	Solution solution;
 	bool result;
 	struct Test {
 		std::vector<std::vector<char>> board;
@@ -93,7 +96,7 @@ int test_36()
 	std::cout << "Testing Solution" << std::endl;
 	for (auto& test : tests) {
 		utils::printMatrix(test.board);
-		result = solution->isValidSudoku(test.board);
+		result = solution.isValidSudoku(test.board);
 		std::cout << (result ? "Valid" : "Invalid") << std::endl;
 		if (result != test.expected) return 1;
 	}
