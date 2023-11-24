@@ -153,7 +153,13 @@
     <ClCompile Include="Challenges\43. Multiply Strings\Solution43.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Precompiled Headers\pch.cpp">
+    <ClCompile Include="pch\pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\45. Jump Game II\Solution45.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenges\44. Wildcard Matching\Solution44.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -293,7 +299,13 @@
     <ClInclude Include="Challenges\43. Multiply Strings\Solution43.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Precompiled Headers\pch.h">
+    <ClInclude Include="pch\pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\45. Jump Game II\Solution45.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenges\44. Wildcard Matching\Solution44.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

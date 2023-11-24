@@ -1,7 +1,7 @@
 #include "pch.h"
-#include "Challenges/43. Multiply Strings/Solution43.h"
+#include "Challenges/44. Wildcard Matching/Solution44.h"
 
 int main(int argc, char** argv)
 {
-	return test_43();
+	return test_44();
 }
