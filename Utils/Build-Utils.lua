@@ -7,9 +7,6 @@ staticruntime "off"
 
 files {"src/**.h", "src/**.hpp", "src/**.cpp"}
 
-pchheader "utilspch.h"
-pchsource "src/utilspch.cpp"
-
 includedirs {"src"}
 
 targetdir("../Binaries/" .. OutputDir .. "/%{prj.name}")
