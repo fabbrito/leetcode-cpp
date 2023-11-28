@@ -8,38 +8,24 @@ namespace leetcode_46 {
 
 class leetcode_46::Solution {
 public:
-	vector<vector<int>> permuteFast(vector<int>& nums) {
-		vector<vector<int>> ans = { nums };
-		vector<int> vec = nums;
-		nextPermutation(vec);
-		while (vec != nums) {
-			ans.push_back(vec);
-			nextPermutation(vec);
-		}
-		return ans;
+	vector<vector<int>> permute(vector<int>& nums) {
+		vector<vector<int>> result;
+		solve(nums, 0, nums.size() - 1, result);
+		return result;
 	}
 private:
-	static void reverse(vector<int>& nums, int pStart, int pEnd) {
-		while (pStart < pEnd) {
-			swap(nums[pStart], nums[pEnd]);
-			pStart++;
-			pEnd--;
+	// Backtracking
+	static void solve(vector<int>& nums, int pStart, int pEnd, vector<vector<int>>& result) {
+		if (pStart == pEnd) {
+			result.push_back(nums);
+			return;
 		}
-		return;
-	}
-	static void nextPermutation(vector<int>& nums) {
-		int n = nums.size();
-		int i = n - 2;
-		while (i >= 0 && nums[i] >= nums[i + 1])
-			i--;
-		if (i >= 0) {
-			int j = n - 1;
-			while (j >= 0 && nums[j] <= nums[i])
-				j--;
-			swap(nums[j], nums[i]);
+
+		for (int i = pStart; i <= pEnd; i++) {
+			swap(nums[pStart], nums[i]);
+			solve(nums, pStart + 1, pEnd, result);
+			swap(nums[pStart], nums[i]);
 		}
-		reverse(nums, i + 1, n - 1);
-		return;
 	}
 };
 
@@ -61,9 +47,11 @@ int test_46()
 		Solution solution;
 		utils::printVector(test.nums);
 		cout << " -> ";
-		vector<vector<int>> result = solution.permuteFast(test.nums);
+		vector<vector<int>> result = solution.permute(test.nums);
 		utils::printMatrix(result, true);
 		cout << "\r\n";
+
+		sort(result.begin(), result.end());
 		if (result != test.expected) return 1;
 	}
 	return 0;
