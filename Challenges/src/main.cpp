@@ -1,7 +1,7 @@
 #include "pch.h"
-#include "C46_Permutations/Solution46.h"
+#include <C48_Rotate_Image/Solution48.h>
 
 int main(int argc, char** argv)
 {
-	return test_46();
+	return test_48();
 }
