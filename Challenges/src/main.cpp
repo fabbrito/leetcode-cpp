@@ -1,7 +1,7 @@
 #include "pch.h"
-#include <C48_Rotate_Image/Solution48.h>
+#include <C52_N_Queens_II/Solution52.h>
 
 int main(int argc, char** argv)
 {
-	return test_48();
+	return test_52();
 }
