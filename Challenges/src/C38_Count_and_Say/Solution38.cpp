@@ -1,7 +1,12 @@
 #include "pch.h"
 #include "Solution38.h"
 
-class Solution {
+namespace leetcode_38 {
+	using namespace std;
+	class Solution;
+}
+
+class leetcode_38::Solution {
 public:
 	std::string countAndSay(int n) {
 		if (n == 1) return "1";
@@ -23,6 +28,7 @@ private:
 };
 
 int test_38() {
+	using namespace leetcode_38;
 	Solution solution;
 	std::string result;
 	struct Test {

@@ -1,10 +1,15 @@
 #include "pch.h"
 #include "Solution37.h"
 
-class Solution {
+namespace leetcode_37 {
+	using namespace std;
+	class Solution;
+}
+
+class leetcode_37::Solution {
 public:
-	using BitsetArray = std::array<std::bitset<9>, 9>;
-	using Board = std::vector<std::vector<char>>;
+	using BitsetArray = array<bitset<9>, 9>;
+	using Board = vector<vector<char>>;
 	void solveSudoku(Board& board)const noexcept
 	{
 		BitsetArray row_contains = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -38,7 +43,7 @@ private:
 		return (col + 1) % 9;
 	}
 
-	static constexpr std::pair<int, int> next_empty_position(Board& board, int row, int col) noexcept {
+	static constexpr pair<int, int> next_empty_position(Board& board, int row, int col) noexcept {
 		while (row != 9) {
 			if (board[row][col] == '.')
 				return { row, col };
@@ -55,7 +60,7 @@ private:
 
 		int cell = get_cell(row, col);
 		// consolidates all numbers already used
-		std::bitset<9> const contains = row_contains[row] | col_contains[col] | cell_contains[cell];
+		bitset<9> const contains = row_contains[row] | col_contains[col] | cell_contains[cell];
 		if (contains.all()) // no remaining numbers to be used
 			return false;
 
@@ -85,12 +90,13 @@ private:
 
 
 int test_37() {
+	using namespace leetcode_37;
 	Solution solution;
 	struct Test {
-		std::vector<std::vector<char>> board;
-		std::vector<std::vector<char>> expected;
+		vector<vector<char>> board;
+		vector<vector<char>> expected;
 	};
-	std::vector<Test> tests = {
+	vector<Test> tests = {
 		{{
 			{'5','3','.','.','7','.','.','.','.'},
 			{'6','.','.','1','9','5','.','.','.'},
@@ -136,9 +142,9 @@ int test_37() {
 		},
 	};
 
-	std::cout << "Testing Solution" << std::endl;
+	cout << "Testing Solution" << endl;
 	for (auto& test : tests) {
-		std::vector<std::vector<char>> board = test.board;
+		vector<vector<char>> board = test.board;
 		utils::printMatrix(test.board);
 		solution.solveSudoku(board);
 		utils::printMatrix(board);

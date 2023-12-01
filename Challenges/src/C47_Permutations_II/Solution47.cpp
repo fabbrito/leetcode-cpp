@@ -4,7 +4,6 @@
 namespace leetcode_47 {
 	using namespace std;
 	class Solution;
-	class Solution2;
 }
 
 class leetcode_47::Solution {
