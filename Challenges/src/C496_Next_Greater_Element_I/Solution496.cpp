@@ -53,12 +53,13 @@ int test_496() {
 
 	std::cout << "Testing Solution" << std::endl;
 	for (auto& test : tests) {
-		utils::printVector(test.nums1, ", ", false);
+		utils::printVector(test.nums1);
 		std::cout << ", ";
-		utils::printVector(test.nums2, ", ", false);
+		utils::printVector(test.nums2);
 		result = solution.nextGreaterElement(test.nums1, test.nums2);
 		std::cout << " -> ";
 		utils::printVector(result);
+		std::cout << std::endl;
 
 		if (result != test.expected) return 1;
 	}
