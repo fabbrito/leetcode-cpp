@@ -1,7 +1,11 @@
 #include "pch.h"
-#include <C52_N_Queens_II/Solution52.h>
+#include <C62_Unique_Paths/Solution62.h>
 
 int main(int argc, char** argv)
 {
-	return test_52();
+	auto code = test_62();
+#ifndef DEBUG
+	std::cin.get();
+#endif
+	return code;
 }
