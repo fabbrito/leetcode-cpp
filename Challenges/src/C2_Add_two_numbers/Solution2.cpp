@@ -82,6 +82,7 @@ namespace leetcode_2 {
 		}
 	}
 }
+
 int test_2() {
 	using namespace leetcode_2;
 	Solution solution;

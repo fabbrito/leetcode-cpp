@@ -45,7 +45,7 @@ int test_47()
 		{{1},{{1}}},
 	};
 
-	cout << "Testing Solution" << endl;
+	cout << "----------------- Testing Solution -----------------\r\n";
 	for (auto& test : tests) {
 		Solution solution;
 		utils::printVector(test.nums);

@@ -103,7 +103,7 @@ int test_51() {
 		{3,{}},
 	};
 
-	cout << "Testing Solution" << endl;
+	cout << "----------------- Testing Solution -----------------\r\n";
 	for (auto& test : tests) {
 		Solution2 solution;
 		cout << test.n << " -> ";

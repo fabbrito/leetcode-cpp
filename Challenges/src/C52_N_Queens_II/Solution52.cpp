@@ -45,7 +45,7 @@ int test_52() {
 		{3,0},
 	};
 
-	cout << "Testing Solution" << endl;
+	cout << "----------------- Testing Solution -----------------\r\n";
 	for (auto& test : tests) {
 		Solution solution;
 		auto result = solution.totalNQueens(test.n);

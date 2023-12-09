@@ -46,7 +46,7 @@ int test_50()
 		{2.0,-2,0.25},
 	};
 
-	cout << "Testing Solution" << endl;
+	cout << "----------------- Testing Solution -----------------\r\n";
 	for (auto& test : tests) {
 		Solution solution;
 		auto result = solution.myPow(test.x, test.n);

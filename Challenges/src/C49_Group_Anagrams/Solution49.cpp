@@ -38,7 +38,7 @@ int test_49()
 		{{""},{{""}}},
 	};
 
-	cout << "Testing Solution" << endl;
+	cout << "----------------- Testing Solution -----------------\r\n";
 	for (auto& test : tests) {
 		Solution solution;
 		utils::printVector(test.strs);
