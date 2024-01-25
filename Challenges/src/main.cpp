@@ -1,9 +1,9 @@
 #include "pch.h"
-#include <C64_Minimum_Path_Sum/Solution64.h>
+#include <C70_Climbing_Stairs/Solution70.h>
 
 int main(int argc, char** argv)
 {
-	auto code = test_64();
+	auto code = test_70();
 #ifndef DEBUG
 	std::cin.get();
 #endif
