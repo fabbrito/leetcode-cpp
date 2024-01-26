@@ -14,7 +14,7 @@ public:
 	//            = r_n - r_n/2 + x/(2 r_n)
 	//      r_n+1 = (r_n + x/r_n)/2
 	int mySqrt(int x) {
-		long long r = x;
+		long long r = 0.5 * x; // to skip first iter
 		while (r * r > x)
 			r = static_cast<long long>((r + x / r) / 2);
 		return r;
