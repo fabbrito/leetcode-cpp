@@ -12,14 +12,14 @@ class leetcode_71::Solution {
 public:
 	string simplifyPath(string path) {
 		stack<string> st;
-		string res = "";
+		string res;
 
 		for (int i = 0; i < path.size(); ++i) {
 
 			if (path[i] == '/') {
 				continue;
 			}
-			string temp = "";
+			string temp;
 
 			while (i < path.size() && path[i] != '/') {
 				// add path to temp string
