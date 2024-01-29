@@ -8,6 +8,8 @@ namespace leetcode_75 {
 
 class leetcode_75::Solution {
 public:
+	// Time: O(n)
+	// Space: O(1)
 	void sortColors(vector<int>& nums) {
 		int left = 0, mid = 0, right = nums.size() - 1;
 		while (mid <= right) {
