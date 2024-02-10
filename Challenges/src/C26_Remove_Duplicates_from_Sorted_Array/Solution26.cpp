@@ -1,15 +1,13 @@
 #include "pch.h"
-#include "./Solution26.h"
+#include "Solution26.h"
 
 namespace leetcode_26 {
-	class Solution {
-	public:
-		int removeDuplicates(std::vector<int>& nums);
-	};
-}
 
-namespace leetcode_26 {
-	int Solution::removeDuplicates(std::vector<int>& nums) {
+using namespace std;
+
+class Solution {
+public:
+	int removeDuplicates(std::vector<int>& nums) {
 		int n = nums.size();
 		if (n == 1) return 1;
 		int pCurr = 0, pIns = 0;
@@ -36,30 +34,40 @@ namespace leetcode_26 {
 		}
 		return pIns;
 	}
+};
 }
+
 int test_26() {
 	using namespace leetcode_26;
-	Solution solution;
-	int result;
-	struct Test {
+
+	struct test_t {
 		std::vector<int> nums;
 		int expected;
+		std::vector<int> expectedNums;
 	};
-	std::vector<Test> tests = {
-		{{0,0,0}, 1},
-		{{0,0,1,1,1,2,2,3,3,4}, 5},
-		{{0,1,2}, 3},
-		{{0}, 1},
-		{{1,1,2}, 2},
+	std::vector<test_t> tests = {
+		{{0,0,0},1,{0}},
+		{{0,0,1,1,1,2,2,3,3,4},5,{0,1,2,3,4}},
+		{{0,1,2},3,{0,1,2}},
+		{{0},1,{0}},
+		{{1,1,2},2,{1,2}},
 	};
 
-	std::cout << "Testing Solution" << std::endl;
+	std::cout << "Testing Solution\r\n";
 	for (auto& test : tests) {
-		std::cout << "---------------------" << std::endl;
-		result = solution.removeDuplicates(test.nums);
-		utils::printVector(test.nums, ", ", false);
-		std::cout << " -> " << result << std::endl;
+		Solution solution;
+		utils::printVector(test.nums);
+		int result = solution.removeDuplicates(test.nums);
+		std::cout << " -> " << result << ", ";
+		utils::printVector(test.nums);
+		std::cout << "\r\n";
+
 		if (result != test.expected) return 1;
+		for (int i = 0; i < result; ++i) {
+			if (test.nums[i] != test.expectedNums[i]) {
+				return 1;
+			}
+		}
 	}
 	return 0;
 }
