@@ -15,7 +15,7 @@ public:
 			if (target == nums[mid]) {
 				return true;
 			}
-
+			
 			if (nums[left] == nums[mid] && nums[mid] == nums[right]) {
 				left++;
 				right--;
